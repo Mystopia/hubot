@@ -1,0 +1,34 @@
+{
+  "name": "hubot",
+  "scripts": {
+  },
+  "env": {
+    "HEROKU_URL": {
+      "required": true
+    },
+    "HUBOT_HEROKU_KEEPALIVE_INTERVAL": {
+      "required": true
+    },
+    "HUBOT_SLACK_TOKEN": {
+      "required": true
+    },
+    "PROCESS_SCHEDULER_URL": {
+      "required": true
+    },
+    "REDISTOGO_URL": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "process-scheduler",
+    "redistogo",
+    "scheduler"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
